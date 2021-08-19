@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header__nav">
+                <ul class="header__list"> 
+                    <li class="header__item">
+                        <a class="header__link" href="index.html">База ГАИ 2021</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__link-open" href="#">О проекте</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close close-popup">X</a>
+                    <div class="popup__title">О проекте</div>
+                    <div class="popup__text">База ГАИ 2021 - база номеров украинских транспортных средств.</div>
+                    <ul class="popup__list">
+                        <li class="popup__item"> <span class="popup__item-span">На основании чего вы публикуете данные о номерах?</span><br>
+                            Эти данные - публичная информация. Информация получается из открытых данных государственных органов. В соответствии с законом Украины <a class="popup__item-link" href="https://zakon.rada.gov.ua/laws/show/2939-17#Text" target="_blank">"О доступе к публичной информации"</a>публичная информация в форме открытых данных публикуется для дальнейшего свободного использования и распространения. Открытые данные могут быть использованы любым лицом, в том числе в коммерческих целях, в сочетании с другой информацией или путем включения в состав собственного продукта.
+                        </li>
+                        <li class="popup__item"><span class="popup__item-span">Как узнать Ф.И.О. владельца номера?</span><br>
+                            К сожалению, такой возможности нет. Эту информацию Вы можете получить, обратившись в ближайшее отделение полиции с официальным запросом
+                        </li>
+                        <li class="popup__item"> <span class="popup__item-span">Почему номера нет в базе, или информация по нему не совпадает?</span><br>
+                            Три возможных варианта: 1) Номер выдан совсем недавно и не успел войти в обновление базы. 2) Технические ошибки в открытой базе МВД Украины. 3) Номер выдан ранее 2013 года
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+
+    </header>
+    <main class="main">
+        <section class="informal">
+            <div class="informal__container container">
+                <h2 class="informal__title">Проверка авто по номеру:</h2>
+                <div class="informal__numbers">
+                    <div class="informal__country">
+                        <div class="informal__flag">
+                            <div class="informal__flag--blue"></div>
+                            <div class="informal__flag--yellow"></div>
+                        </div>
+                        <div class="informal__region">UA</div>
+                    </div>
+                    <form class="informal__form "action="#">
+                        <input class="informal__input" type="text" name="numbers">
+                    </form>
+                    <div class="informal__find">
+                        <img class="informal__search" src="img/search.png" alt="search-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="error">
+                <p class="error__status"></p> 
+            </div>
+
+        </section>
+        <section class="about">
+             <div class="about__container container"></div> 
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
